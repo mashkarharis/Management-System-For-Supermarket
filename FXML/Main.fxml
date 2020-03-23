@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="992.0" prefWidth="1916.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="134.0" fitWidth="174.0" layoutX="1252.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <Separator blendMode="SRC_ATOP" layoutX="1445.0" orientation="VERTICAL" prefHeight="992.0" prefWidth="14.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <Text fill="#171717" fontSmoothingType="LCD" layoutX="768.0" layoutY="65.0" stroke="#3311da" strokeWidth="0.0" text="ABC SUPER MARKET" underline="true" wrappingWidth="444.28643798828125">
+         <font>
+            <Font name="Wingdings 2" size="48.0" />
+         </font>
+      </Text>
+      <Separator blendMode="SRC_ATOP" layoutX="450.0" orientation="VERTICAL" prefHeight="992.0" prefWidth="14.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <ImageView fitHeight="131.0" fitWidth="208.0" layoutX="504.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2.png" />
+         </image>
+      </ImageView>
+      <Separator blendMode="SRC_ATOP" layoutX="456.0" layoutY="122.0" prefHeight="14.0" prefWidth="993.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <AnchorPane layoutX="1459.0" layoutY="-3.0" prefHeight="491.0" prefWidth="456.0">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="152.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER" underline="true" wrappingWidth="155.99998952820897">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="s5add" layoutX="28.0" layoutY="347.0" prefHeight="117.0" prefWidth="186.0" style="-fx-background-color: #d3d1d1;" text="ADD" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s5print" layoutX="27.0" layoutY="221.0" prefHeight="117.0" prefWidth="187.0" style="-fx-background-color: #d3d1d1;" text="PRINT" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s5remove" layoutX="223.0" layoutY="346.0" prefHeight="117.0" prefWidth="226.0" style="-fx-background-color: #d3d1d1;" text="REMOVE" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s5edit" layoutX="25.0" layoutY="96.0" prefHeight="117.0" prefWidth="187.0" style="-fx-background-color: #d3d1d1;" text="EDIT" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="240.0" fitWidth="220.0" layoutX="228.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@download.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator blendMode="SRC_ATOP" layoutX="1450.0" layoutY="488.0" prefHeight="14.0" prefWidth="466.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <AnchorPane layoutX="1457.0" layoutY="498.0" prefHeight="491.0" prefWidth="456.0">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="188.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM" underline="true" wrappingWidth="71.99998952820897">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="s6add" layoutX="29.0" layoutY="340.0" prefHeight="117.0" prefWidth="186.0" style="-fx-background-color: #d3d1d1;" text="ADD" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s6print" layoutX="28.0" layoutY="214.0" prefHeight="117.0" prefWidth="187.0" style="-fx-background-color: #d3d1d1;" text="PRINT" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s6remove" layoutX="224.0" layoutY="339.0" prefHeight="117.0" prefWidth="226.0" style="-fx-background-color: #d3d1d1;" text="REMOVE" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s6edit" layoutX="26.0" layoutY="89.0" prefHeight="117.0" prefWidth="187.0" style="-fx-background-color: #d3d1d1;" text="EDIT" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="240.0" fitWidth="220.0" layoutX="229.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="402.0" prefWidth="456.0">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="157.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUPPLIER" underline="true" wrappingWidth="130.49999848008156">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="s1add" layoutX="23.0" layoutY="289.0" prefHeight="90.0" prefWidth="421.0" style="-fx-background-color: #d3d1d1;" text="ADD" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="s1print" layoutX="257.0" layoutY="188.0" prefHeight="67.0" prefWidth="187.0" style="-fx-background-color: #d3d1d1;" text="PRINT" textFill="#111111">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Separator blendMode="SRC_ATOP" layoutX="-9.0" layoutY="389.0" prefHeight="14.0" prefWidth="466.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <AnchorPane layoutX="-2.0" layoutY="405.0" prefHeight="587.0" prefWidth="456.0">
+         <children>
+            <TabPane layoutX="2.0" layoutY="38.0" prefHeight="548.0" prefWidth="454.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Suppliers">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView layoutX="2.0" layoutY="1.0" prefHeight="520.0" prefWidth="460.0">
+                                <columns>
+                                    <TableColumn prefWidth="80.9999132156372" text="SID" />
+                                  <TableColumn prefWidth="166.00008392333984" text="NAME" />
+                                  <TableColumn minWidth="0.6667098999023438" prefWidth="203.9999542236328" text="AMOUNT" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Items">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView layoutY="-1.0" prefHeight="520.0" prefWidth="460.0">
+                                 <columns>
+                                    <TableColumn prefWidth="80.9999132156372" text="IID" />
+                                    <TableColumn prefWidth="166.00008392333984" text="NAME" />
+                                    <TableColumn minWidth="0.6667098999023438" prefWidth="208.49996948242188" text="UNIT PRICE" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Customers">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="520.0" prefWidth="460.0">
+                                 <columns>
+                                    <TableColumn prefWidth="80.9999132156372" text="CID" />
+                                    <TableColumn prefWidth="166.00008392333984" text="NAME" />
+                                    <TableColumn minWidth="0.6667098999023438" prefWidth="208.49996948242188" text="TEL" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Text fontSmoothingType="LCD" layoutX="153.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMMARY" underline="true" wrappingWidth="147.83334198594093">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="s1edit" layoutX="258.0" layoutY="86.0" prefHeight="54.0" prefWidth="187.0" style="-fx-background-color: #d3d1d1;" text="EDIT" textFill="#111111">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="231.0" fitWidth="220.0" layoutX="23.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="459.0" layoutY="132.0" prefHeight="861.0" prefWidth="987.0">
+         <children>
+            <Text layoutX="403.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW TRANSASCTION" underline="true" wrappingWidth="210.49999848008156">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER ID  :" wrappingWidth="203.6708984375">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="37.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER  NAME  :" wrappingWidth="253.00421142578125">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <Text layoutX="641.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE" wrappingWidth="75.6708984375">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <ChoiceBox layoutX="267.0" layoutY="74.0" prefHeight="38.0" prefWidth="349.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+            <TextField editable="false" layoutX="298.0" layoutY="130.0" prefHeight="38.0" prefWidth="682.0" style="-fx-border-color: BLACK;" />
+            <TextField editable="false" layoutX="719.0" layoutY="74.0" prefHeight="38.0" prefWidth="262.0" style="-fx-border-color: BLACK;" />
+            <Text layoutX="41.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM ID  :" wrappingWidth="116.99998676776886">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <ChoiceBox layoutX="165.0" layoutY="214.0" prefHeight="38.0" prefWidth="153.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" />
+            <Text layoutX="334.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" wrappingWidth="75.6708984375">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <TextField editable="false" layoutX="417.0" layoutY="215.0" prefHeight="38.0" prefWidth="262.0" style="-fx-border-color: BLACK;" />
+            <Text layoutX="688.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY ON HAND" wrappingWidth="75.6708984375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField editable="false" layoutX="766.0" layoutY="217.0" prefHeight="38.0" prefWidth="98.0" style="-fx-border-color: BLACK;" />
+            <Text layoutX="865.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY" wrappingWidth="56.75317368004471">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <TextField layoutX="919.0" layoutY="217.0" prefHeight="38.0" prefWidth="64.0" style="-fx-border-color: BLACK;" />
+            <Text layoutX="40.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESC." wrappingWidth="75.6708984375">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <TextField editable="false" layoutX="123.0" layoutY="263.0" prefHeight="38.0" prefWidth="641.0" style="-fx-border-color: BLACK;" />
+            <Text layoutX="773.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE" wrappingWidth="75.6708984375">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <TextField editable="false" layoutX="853.0" layoutY="262.0" prefHeight="38.0" prefWidth="130.0" style="-fx-border-color: BLACK;" />
+            <ScrollPane layoutX="3.0" layoutY="333.0" prefHeight="440.0" prefWidth="985.0">
+               <content>
+                  <TableView prefHeight="508.0" prefWidth="965.0">
+                     <columns>
+                        <TableColumn prefWidth="103.6666259765625" text="IID" />
+                        <TableColumn prefWidth="227.3333740234375" text="NAME" />
+                        <TableColumn minWidth="0.6667098999023438" prefWidth="212.3333740234375" text="QTY" />
+                        <TableColumn minWidth="0.6667098999023438" prefWidth="207.6666259765625" text="UNIT PRICE" />
+                        <TableColumn minWidth="0.6667098999023438" prefWidth="214.0" text="AMOUNT" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Text layoutX="481.0" layoutY="825.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL AMOUNT" wrappingWidth="210.3375244140625">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+            <TextField editable="false" layoutX="706.0" layoutY="795.0" prefHeight="38.0" prefWidth="262.0" style="-fx-border-color: BLACK;" />
+         </children>
+      </AnchorPane>
+      <Separator blendMode="SRC_ATOP" layoutX="457.0" layoutY="313.0" prefHeight="14.0" prefWidth="993.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <Separator blendMode="SRC_ATOP" layoutX="457.0" layoutY="455.0" prefHeight="14.0" prefWidth="993.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Separator>
+      <JFXButton fx:id="S4SAVE" layoutX="702.0" layoutY="921.0" prefHeight="56.0" prefWidth="213.0" style="-fx-background-color: #d3d1d1;" text="SAVE &amp; PRINT" textFill="#111111">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="S4REMOVEITEM" layoutX="472.0" layoutY="920.0" prefHeight="56.0" prefWidth="213.0" style="-fx-background-color: #d3d1d1;" text="REMOVE ITEM" textFill="#111111">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

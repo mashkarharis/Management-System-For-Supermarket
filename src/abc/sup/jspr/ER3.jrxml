@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-12-27T18:21:12 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ER3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ebd0e392-ce08-4c31-b1b3-fa00331b7dc1">
+	<parameter name="customerid" class="java.lang.String"/>
+	<parameter name="billid" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="amount" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="125" y="0" width="310" height="68" uuid="31de3593-d7e1-40d9-b426-06785c021f91"/>
+				<textElement>
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[TRANSACTION DETAILS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="257" splitType="Stretch">
+			<staticText>
+				<reportElement x="33" y="49" width="100" height="30" uuid="f03963de-396f-4c0a-b746-13637f7de594"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[CustomerID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="100" width="100" height="30" uuid="2c36a831-6a52-4220-a521-d40c28a1c85f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="202" width="100" height="30" uuid="ee324449-c981-432d-b060-374c2f39691b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="150" width="100" height="30" uuid="4d9a6753-beaa-4b9b-b05e-8ffaacf63d61"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Bill ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="49" width="385" height="30" uuid="a8b85d70-9961-4bf6-90c1-d7bc0f93efaf"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{customerid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="100" width="385" height="30" uuid="ce400048-033f-4fc4-829e-1f51ea1c27f7"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="150" width="385" height="30" uuid="1b968b5b-34ff-4fe5-931b-ef8192543bb4"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{billid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="202" width="385" height="30" uuid="c75b7479-7675-4d74-a3c5-8297b4f6998b"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

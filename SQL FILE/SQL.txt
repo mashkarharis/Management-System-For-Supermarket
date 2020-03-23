@@ -1,0 +1,111 @@
+DROP DATABASE ABC_SUPER_MARKET;
+
+CREATE DATABASE ABC_SUPER_MARKET;
+
+USE ABC_SUPER_MARKET;
+
+CREATE TABLE Customers(
+        cid VARCHAR(6) NOT NULL,
+	  membershipdate VARCHAR(16),
+	  regno VARCHAR(16),
+	  name VARCHAR(30),
+	  address VARCHAR(100),
+	  email VARCHAR(30),
+        tele INT(25),
+	  points DECIMAL(8,2),
+        CONSTRAINT PRIMARY KEY (cid)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE suppliers(
+        sid VARCHAR(6) NOT NULL,
+	  name VARCHAR(30),
+	  address VARCHAR(100),
+	  email VARCHAR(30),
+        tele INT(25),
+        amount DECIMAL(18,2),
+        CONSTRAINT PRIMARY KEY (sid)
+        )ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE Items(
+        iid VARCHAR(6) NOT NULL,
+	  sid VARCHAR(6),
+	  name VARCHAR(30),
+	  description VARCHAR(50),
+        unitPrice DECIMAL(8,2),
+        qtyOnHand DECIMAL(8,2),
+        CONSTRAINT PRIMARY KEY (iid),
+	  CONSTRAINT FOREIGN KEY (sid) REFERENCES suppliers(sid) ON Delete Cascade On update cascade
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE transactions(
+        tid VARCHAR(6) NOT NULL,
+        iid VARCHAR(6) NOT NULL,
+	  cid VARCHAR(6) NOT NULL,
+        qty INT(11),
+        total DECIMAL(18,2),
+        CONSTRAINT PRIMARY KEY (tid),
+        CONSTRAINT FOREIGN KEY (iid) REFERENCES Items(iid) ON Delete Cascade On update cascade,
+        CONSTRAINT FOREIGN KEY (cid) REFERENCES Customers(cid) ON Delete Cascade On update cascade
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO Customers VALUES('NULL','NULL','NULL','NULL','NULL','NULL',0000000000,0000.00);
+INSERT INTO Customers VALUES('C001','2018-02-13','C001','Danapala','34A,SD road,Panadura','danapala123@gmail.com',0761254534,10.02);
+INSERT INTO Customers VALUES('C002','2018-03-23','C002','Gunapala','No.12,Galle  road,Colombo','gunapala321@gmail.com',0912432343,8.03);
+INSERT INTO Customers VALUES('C003','2015-12-03','C003','Nimal','46,A rd,Galle','nimal123@gmail.com',0761875341,7.00);
+INSERT INTO Customers VALUES('C004','2016-05-19','C004','Ajith','23B,ABC rd,Galle','ajitj£qwe@gmail.com',0723454313,12.00);
+INSERT INTO Customers VALUES('C005','2018-10-11','C005','Silva','35A,ASD road,Galle','silvagalle@gmail.com',0755599949,00.00);
+
+
+
+
+INSERT INTO suppliers VALUES('S001','Unilever','258 Grandpass Rd, Colombo 01400','Consumercare.usl@unilever.com',0114700800,10000.00);
+INSERT INTO suppliers VALUES('S002','Hemas',' Hemas House, 75 Braybrooke Pl, Colombo 00200','info@hemas.com',0114731731,15000.00);
+INSERT INTO suppliers VALUES('S003','Freelan-Matara','Freelan Enterprises (PVT) Ltd,
+No. 38, Gunawardana Mawatha, Navimana South,
+Matara, Sri Lanka.','info@freelanmatara.com
+',0412222237,15000.00);
+INSERT INTO suppliers VALUES('S004','Edinborough','B232, Sri Jayawardenepura Kotte','	
+info@edinboroughfoods.com
+',0117326326,15000.00);
+INSERT INTO suppliers VALUES('S005','Milco','Nawala Road, 45, Colombo 00500','	
+info@milco.lk
+',0112586174,10000.00);
+
+
+
+
+
+
+INSERT INTO items VALUES('i001','S004','Tomato Ketchup','A kind of tomato sauce',500.00,10.00);
+INSERT INTO items VALUES('i002','S004','Strawberry Jam','Jam made of natural Strawberry',750.00,10.00);
+INSERT INTO items VALUES('i003','S004','Lime-Mate','Lime Juice use for cooking',250.00,10.00);
+
+INSERT INTO items VALUES('i004','S003','Chilli Poweder','100% Natural Chilli Poweder with no chemicals',780.00,10.00);
+INSERT INTO items VALUES('i005','S003','Noodles','Delicious noodles from freeland',220.00,10.00);
+INSERT INTO items VALUES('i006','S003','Soya','Freelan Chicken Flavoured soya',250.00,20.00);
+
+INSERT INTO items VALUES('i007','S002','Clogard','Highly recomended tooth paste',150.00,30.00);
+INSERT INTO items VALUES('i008','S002','Diva','Clothe washing powder',120.00,40.00);
+INSERT INTO items VALUES('i009','S002','Velvet soap pack','one of the best soaps in Sri Lanka',285.00,20.00);
+
+INSERT INTO items VALUES('i010','S001','Vim','Detergent Powder',300.00,15.00);
+INSERT INTO items VALUES('i011','S001','Fair & Lovely Men','One of the best men s face wash',160.00,30.00);
+INSERT INTO items VALUES('i012','S001','Lux','one of the best soaps in Sri Lanka',57.00,100.00);
+
+INSERT INTO items VALUES('i013','S005','Highland Curd','One of the best Curd in Sri Lanka',300.00,15.00);
+INSERT INTO items VALUES('i014','S005','Ice Cream','HighLand Ice creams',160.00,30.00);
+INSERT INTO items VALUES('i015','S005','Fresh Milk','Highland fresh milk',57.00,100.00);
+
+
+
+
+
+
+
+
+
+
+select * from items;
+select * from customers;
+select * from suppliers;
+select * from transactions;

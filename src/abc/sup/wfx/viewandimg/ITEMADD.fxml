@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="600.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abc.sup.wfx.controller.ITEMADDController">
+   <children>
+      <Text layoutX="258.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM" underline="true">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="211.0" fitWidth="278.0" layoutX="189.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="6.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUPPLIER ID  :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="3.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM NAME:">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="5.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM DESC. :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="5.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIT PRICE :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="iname" layoutX="172.0" layoutY="447.0" prefHeight="31.0" prefWidth="416.0" />
+      <TextField fx:id="idesc" layoutX="173.0" layoutY="506.0" prefHeight="31.0" prefWidth="416.0" />
+      <TextField fx:id="iprice" layoutX="173.0" layoutY="564.0" prefHeight="31.0" prefWidth="416.0" />
+      <JFXButton fx:id="iadd" layoutX="227.0" layoutY="627.0" onAction="#iadd" prefHeight="54.0" prefWidth="146.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="6.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM ID :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="iid" layoutX="134.0" layoutY="387.0" prefHeight="31.0" prefWidth="456.0" />
+      <ComboBox fx:id="icombobox" layoutX="198.0" layoutY="336.0" onAction="#selectitem" prefHeight="31.0" prefWidth="390.0" />
+   </children>
+</AnchorPane>

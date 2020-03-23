@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-12-26T22:27:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ER2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9293120f-21de-4d50-a7dd-d69d4785ef24">
+	<parameter name="sid" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="tele" class="java.lang.String"/>
+	<parameter name="amount" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="101" y="0" width="355" height="60" uuid="b499b3a9-50b5-40d4-a5ab-9dbe82943232"/>
+				<textElement>
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[SUPPLIER DETAILS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="356" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="100" height="30" uuid="e164c23e-ddb7-4ddf-9034-961ea2ce9d1e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Supplier ID	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="100" height="30" uuid="0475b034-3a26-4761-af0f-c29ceb4a4e1c"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Supplier Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="100" height="30" uuid="b8981019-9ccb-477c-9340-bd7a07b87442"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="100" height="30" uuid="772a2115-c9f2-43ea-bfea-f84cd0a64d37"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[E-Mail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="240" width="100" height="30" uuid="b9e4225f-a789-44c4-b40e-5b693f3f886b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="100" height="30" uuid="b01141d1-88ea-4aac-8252-3f05ee957b54"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="30" width="430" height="30" uuid="6c6aefbd-be5f-407a-ad3c-6f8ca94025cc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="80" width="427" height="30" uuid="f816582b-90bf-43b0-a315-622b09f50372"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="130" width="427" height="30" uuid="f19b1ea2-bb94-49ab-8bbd-4bd2704beaf3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="190" width="427" height="30" uuid="ed2aade2-9999-46ba-8f6d-295c7ce6ae45"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="240" width="427" height="30" uuid="91deac25-27a1-46c4-9bb2-0c96777776ee"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tele}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="290" width="427" height="30" uuid="274ef91b-ebea-471a-a1f5-c46c50d4d6ee"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
